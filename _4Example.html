@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const input = [
+  {
+    name: "John",
+    age: 13,
+  },
+  {
+    name: "Mark",
+    age: 56,
+  },
+  {
+    name: "Rachel",
+    age: 45,
+  },
+  {
+    name: "Nate",
+    age: 67,
+  },
+  {
+    name: "Jennifer",
+    age: 65,
+  },
+];
+
+let young = Math.min(...input.map(x=>x.age))
+let old = Math.max(...input.map(x=>x.age))
+
+let diff = old - young
+console.log(diff)
+
+    </script>
+</body>
+</html>
