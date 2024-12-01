@@ -1,0 +1,11 @@
+<script>
+    function f1(a,b,c){
+     console.log("a : "+a);
+     console.log("b : "+b);
+     c();
+    }
+
+    f1(20,"Hello",function(){
+        console.log("Callback executed....");
+    });
+</script>
